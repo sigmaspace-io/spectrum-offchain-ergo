@@ -2,9 +2,9 @@ use std::fmt;
 use std::fmt::Formatter;
 use std::marker::PhantomData;
 
-use serde::__private::de::missing_field;
 use serde::ser::SerializeStruct;
 use serde::{de, Deserialize, Deserializer, Serialize, Serializer};
+use serde::__private228::de::missing_field;
 use crate::combinators::EitherOrBoth;
 
 use crate::data::OnChainEntity;

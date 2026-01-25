@@ -2,7 +2,7 @@
 name = "spectrum-offchain-lm"
 version = "0.1.0"
 edition = "2021"
-rust-version = "1.67.1"
+rust-version = "1.88.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -14,7 +14,7 @@ ergo-chain-sync = { version = "0.1.0", path = "../ergo-chain-sync" }
 ergo-mempool-sync = { version = "0.1.0", path = "../ergo-mempool-sync" }
 spectrum-offchain = { version = "0.1.0", path = "../spectrum-offchain" }
 #ergo-lib = { version = "0.23", features = ["json", "arbitrary"] }
-ergo-lib = { git = "https://github.com/ergoplatform/sigma-rust", rev = "799107269fa43549b08f6ddb04ed412daec1c5d7", features = ["json", "arbitrary"] }
+ergo-lib = { version = "0.28.0", features = ["json", "arbitrary"] }
 log = "0.4.17"
 log4rs = { version = "1.2.0", features = ["gzip"] }
 async-trait = "0.1.58"
@@ -40,7 +40,6 @@ rocksdb = "0.20.1"
 async-channel = "1.8.0"
 futures-timer = "3.0.2"
 clap = { version = "4.0", features = ["derive"] }
-sigma-test-util = { git = "https://github.com/ergoplatform/sigma-rust", dev = "799107269fa43549b08f6ddb04ed412daec1c5d7" }
 lazy_static = "1.4.0"
 thiserror = "1.0"
 async-std = "1.12"
