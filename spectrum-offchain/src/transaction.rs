@@ -1,6 +1,7 @@
 use ergo_lib::chain::transaction::prover_result::ProverResult;
 use ergo_lib::chain::transaction::{Input, Transaction, TxIoVec};
-use ergo_lib::ergotree_interpreter::sigma_protocol::prover::{ContextExtension, ProofBytes};
+use ergo_lib::ergotree_interpreter::sigma_protocol::prover::{ProofBytes};
+use ergo_lib::ergotree_ir::chain::context_extension::ContextExtension;
 use ergo_lib::ergotree_ir::chain::ergo_box::{ErgoBox, ErgoBoxCandidate};
 
 #[derive(PartialEq, Eq, Debug, Clone)]
