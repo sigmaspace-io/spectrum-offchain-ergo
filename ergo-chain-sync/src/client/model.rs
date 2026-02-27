@@ -3,6 +3,7 @@ use ergo_lib::ergo_chain_types::Header;
 
 #[derive(Debug, Clone, serde::Serialize, serde::Deserialize)]
 pub struct BlockTransactions {
+    #[serde_as(as = "VecSkipError<_>")]
     pub transactions: Vec<Transaction>,
 }
 
