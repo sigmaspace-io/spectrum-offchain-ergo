@@ -1,8 +1,12 @@
 use ergo_lib::chain::transaction::Transaction;
 use ergo_lib::ergo_chain_types::Header;
+use serde::{Deserialize, Serialize};
+use serde_with::serde_as;
 
-#[derive(Debug, Clone, serde::Serialize, serde::Deserialize)]
+#[serde_with::serde_as]
+#[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct BlockTransactions {
+    #[serde_as(as = "serde_with::VecSkipError<_>")]
     pub transactions: Vec<Transaction>,
 }
 
